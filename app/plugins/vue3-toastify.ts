@@ -1,10 +1,5 @@
-import Vue3Toastify, { toast } from 'vue3-toastify'
-import 'vue3-toastify/dist/index.css'
-
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(Vue3Toastify, { autoCloss: 3000 })
-
-  return {
-    provide: { toast },
-  }
+  nuxtApp.vueApp.directive('focus', {
+    mounted: el => el.focus(),
+  })
 })
