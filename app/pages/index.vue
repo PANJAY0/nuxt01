@@ -1,8 +1,6 @@
 <script setup>
-import { toast } from 'vue3-toastify'
-import 'vue3-toastify/dist/index.css'
 const notify = () => {
-  toast.info('產生一個通知就是這麼簡單')
+  useNuxtApp().$toast.info('產生一個通知就是這麼簡單')
 }
 
 </script>
