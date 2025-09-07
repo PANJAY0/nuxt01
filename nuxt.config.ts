@@ -4,8 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   typescript: {
-        typeCheck: true,
-    },
+    typeCheck: true,
+  },
 
   modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
+
 })
