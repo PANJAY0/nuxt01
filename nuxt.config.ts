@@ -7,6 +7,6 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
 
 })
