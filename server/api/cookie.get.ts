@@ -1,10 +1,5 @@
 export default defineEventHandler((event) => {
-  const cookie = parseCookies(event)
-  return {
-    ok: true,
-    message: '解析Cookie',
-    data: {
-      cookie,
-    },
-  }
+  let counter = Number(getCookie(event, 'counter')) || 0
+  counter += 1
+  setCookie(event, 'counter', counter.toString())
 })
