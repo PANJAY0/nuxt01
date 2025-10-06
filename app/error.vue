@@ -1,8 +1,8 @@
 <script setup>
-if (import.meta.server) {
-  const event = useRequestEvent()
-  setResponseStatus(event, 404)
-}
+// if (import.meta.server) {
+//   const event = useRequestEvent()
+//   setResponseStatus(event, 404)
+// }
 </script>
 <template>
     <div>
